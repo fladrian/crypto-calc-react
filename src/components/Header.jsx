@@ -33,14 +33,13 @@ const StyledH1 = styled.h1`
 	font-weight: 400;
 	font-size: 1.6em;
 	color: #2944D9;
-	border-radius: 12px;
+	border-radius: 18px;
 	align-self: flex-start;
-	padding: .4em 1.2em;
 	z-index: 1;
 	&::after{
 		content: '';
 		display: block;
-		height: 8px;
+		height: 4px;
 		border-radius: 12px;
 		width: 60%;
 		background-color: #f85b68;
@@ -49,6 +48,8 @@ const StyledH1 = styled.h1`
 		font-size: 2.4em;
 	}
 	@media (max-width:720px){
+		padding: .4em .8em;
+	background-color: #d4cdff;
 		margin-top: 2em;
 	}
 `
