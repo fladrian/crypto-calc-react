@@ -49,7 +49,7 @@ const StyledH1 = styled.h1`
 		font-size: 2.4em;
 	}
 	@media (max-width:720px){
-		margin-top: 5em;
+		margin-top: 2em;
 	}
 `
 const StyledBanner = styled.div`
@@ -77,10 +77,11 @@ const StyledInfo = styled.div`
 	box-shadow: 0 1px 4px 1px #5dbff3;
 	z-index: 3;
 	font-size: 1.2em;
-	height: 280px;
+	height: 200px;
 	opacity: .9;
 	@media (min-width:720px){
 		width: 100%;
+		height: 280px;
 	}
 `
 const StyledLoader = styled.div`
@@ -94,10 +95,11 @@ const StyledLoader = styled.div`
 	box-shadow: 0 1px 4px 1px #5dbff3;
 	z-index: 3;
 	font-size: 1.2em;
-	height: 280px;
+	height: 200px;
 	opacity: .9;
 	@media (min-width:720px){
 		width: 100%;
+		height: 280px;
 	}
 `
 const StyledP = styled.p`
@@ -111,13 +113,16 @@ const StyledP = styled.p`
 const StyledH2 = styled.h2`
 	font-size: 1.8em;
 	font-weight: 700;
-	margin: 1em;
+	margin: 1em 0 0 0;
 	color: #101f74;
+	@media (max-width:720px){
+		font-size: 1.2em;
+	}
 
 `
 const Loader = () => (
 	<StyledLoader>
-		<ReactLoading type="spin" color="#101f74" height={100} width={140} />
+		<ReactLoading type="spin" color="#101f74" height={120} width={120} />
 	</StyledLoader>
 );
 
