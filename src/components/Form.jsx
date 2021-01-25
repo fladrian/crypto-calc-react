@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import useSelect from '../hooks/useSelect';
+import PropTypes from 'prop-types';
 
 const FormContainer = styled.section`
 	max-width: 100vw;
@@ -78,8 +79,6 @@ const Form = ({setqueryValue, cryptoInfo}) => {
 		}
 		setqueryValue(data)
 	}
-
-	
 	return (
 		<FormContainer>
 			<FormStyled>
@@ -93,6 +92,11 @@ const Form = ({setqueryValue, cryptoInfo}) => {
 			</FormStyled>
 		</FormContainer>
 	)
+}
+
+Form.propTypes = {
+	setqueryValue: PropTypes.func.isRequired,
+	crypto: PropTypes.array.isRequired
 }
 
 export default Form

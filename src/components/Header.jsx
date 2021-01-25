@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import ilustration from '../assets/img/43518.jpg';
 import ReactLoading from 'react-loading';
+import PropTypes from 'prop-types';
 
 const HeaderContainer = styled.header`
 	text-align: center;
@@ -152,6 +153,11 @@ const Header = ({price, isLoading}) => {
 			</HeaderContainer>
 		</>
 	)
-	}
+}
+
+Header.propTypes = {
+	price: PropTypes.object.isRequired,
+	isLoading: PropTypes.bool.isRequired
+}
 
 export default Header

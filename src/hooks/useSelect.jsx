@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
 
 const Select = styled.select`
 	width: 100%;
@@ -36,4 +38,7 @@ const useSelect = (currencies) => {
 	return [option, SelectUI]
 }
 
+useSelect.propTypes = {
+	currencies: PropTypes.array.isRequired
+}
 export default useSelect
